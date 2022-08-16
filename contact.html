@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Coffee TBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+         <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+         </nav>
+         <h1>Contact Us</h1>
+         </section>
+         <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14131.257175548993!2d85.319518!3d27.692134000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xabfe5f4b310f97de!2sThe%20British%20College%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1660393878304!5m2!1sen!2snp"></iframe>
+
+         </section>
+         <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>thapathali, kathmandu</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+977 9858959303</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>coffetbc@gmail.com</h5>
+                        </span>
+                    </div>
+                </div>
+                 
+<div class="contact-col">
+    <h5>We appreciate your feedback!</h5>
+    <form >
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Phone no:</label>
+            <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Email Id</label>
+            <input type="email" placeholder="enter email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"> </span>
+        </div>
+
+        <div class="input-group">
+        <label>Dine in/ Take Out</label>
+        <input type="checkbox" name="dine">Dine In
+        <input type="checkbox" name="dine">Take Out
+        </div>
+
+
+        <div class="input-group">
+            <label>How was our services?</label>
+            <input type="radio" name="like">Amazing
+            <input type="radio" name="like">Good
+            <input type="radio" name="like">Decent
+            <input type="radio" name="like">Disappointing
+        </div>
+
+        
+        <div class="input-group">
+            <label>Have you visited us before?</label>
+            <select name="visit?">
+                <option value="V1">Yes</option>
+                <option value="V2">No</option>
+                <option value="V3">Prefer not to say</option>
+            </select>
+        </div>
+        
+        <div class="input-group">
+            <label>Your message</label>
+            <textarea rows="'5" placeholder="Enter your message"  id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+        </div>
+
+        <button onclick="return validateForm()" > Submit </button>
+        <span id="submit-error"></span>
+    </form>
+</div>
+</section>
+   
+
+
+ <section class="footer">
+    <h4>----Thank You----</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-Snapchat"></i>
+    </div>
+    <p>
+        Copyright<i class="fa fa-copyright">.All Rights Reserved</i>
+    </p>
+
+ </section>
+    
+ <script src="script.js"></script>
+</body>
+</html>
